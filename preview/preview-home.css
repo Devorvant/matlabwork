@@ -1,0 +1,63 @@
+
+/* Scoped additions: the existing Veloca header keeps its original stylesheet. */
+.mw-navigation.navigation-top { position:static; width:100%; background:#f7fafc; border-color:#e3eaf0; }
+.mw-navigation .wrap { max-width:1100px; padding:0 24px; }
+.mw-nav { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0; }
+.mw-nav ul { display:flex; align-items:center; flex-wrap:wrap; gap:8px 18px; list-style:none; margin:0; padding:0; }
+.mw-nav a { color:#31536c; font-size:14px; font-weight:600; text-decoration:none; border-bottom:2px solid transparent; padding:8px 0; }
+.mw-nav a:hover { color:#004080; border-color:#a8cce5; }
+.mw-nav .mw-language { flex-shrink:0; padding:8px 16px; border:1px solid #b0d4f1; border-radius:9px; background:#e0f0ff; color:#004080; }
+.mw-body { max-width:1100px; margin:0 auto; padding:56px 24px 40px; color:#444; font-size:16px; line-height:1.75; }
+.mw-body h2 { font-size:15px; letter-spacing:.13em; text-transform:uppercase; color:#303c43; margin:0 0 24px; padding:0; }
+.mw-body h3 { font-size:19px; line-height:1.4; letter-spacing:0; font-weight:600; margin:0 0 10px; padding:0; }
+.mw-body p { margin:0 0 18px; }
+.mw-body a { color:#17658e; box-shadow:none; text-decoration:none; }
+.mw-body a:hover { text-decoration:underline; }
+.mw-body a:focus-visible,.mw-nav a:focus-visible { outline:3px solid #427eab; outline-offset:4px; }
+.mw-layout { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); gap:56px; align-items:start; }
+.mw-section { margin:0 0 48px; scroll-margin-top:28px; }
+.mw-intro-image { display:block; width:150px; height:150px; margin:0 0 24px; }
+.mw-eyebrow { font-size:12px; color:#76818a; letter-spacing:.1em; text-transform:uppercase; }
+.mw-areas { padding:0; list-style:none; margin:0 0 24px; }
+.mw-areas li { padding:16px 0; border-bottom:1px solid #e7edf1; }
+.mw-areas li:first-child { padding-top:0; }
+.mw-areas strong { display:block; color:#354b59; font-size:17px; margin-bottom:5px; }
+.mw-body img { max-width:100%; height:auto; }
+.mw-work-image { display:block; width:100%; margin-top:28px; border-radius:4px; }
+.mw-bots { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.mw-bot { min-width:0; padding:20px; background:#f8fbfd; border:1px solid #e0eaf0; border-top:3px solid #b7d6e8; border-radius:8px; }
+.mw-bot h3 { font-size:17px; }
+.mw-bot p { font-size:14px; line-height:1.65; margin:0 0 14px; }
+.mw-bot-links { display:flex; flex-wrap:wrap; gap:5px 14px; font-size:13px; }
+.mw-bot .mw-channel { display:inline-block; font-size:13px; font-weight:600; margin-top:12px; }
+.mw-project-list { margin:0 0 24px; padding-left:20px; font-size:15px; }
+.mw-project-list li { padding-left:4px; margin-bottom:16px; }
+.mw-caption { font-size:13px; color:#7b858c; margin-top:8px !important; }
+.mw-statement { font-size:14px; border-left:3px solid #bfd4c1; padding:4px 0 4px 16px; color:#657666; }
+.mw-about p { font-size:15px; }
+.mw-portrait { width:100px; height:auto; border-radius:4px; }
+.mw-inspiration { list-style:none; padding:0; margin:0; }
+.mw-inspiration li { padding:12px 0; border-bottom:1px solid #e7edf1; }
+.mw-inspiration span { display:block; font-size:13px; color:#7b858c; }
+.mw-art { border-top:1px solid #e1e8ec; padding-top:40px; }
+.mw-gallery { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; }
+.mw-gallery figure { margin:0; }
+.mw-gallery img { display:block; width:100%; border-radius:4px; }
+.mw-gallery figcaption { margin-top:10px; font-size:14px; }
+.mw-contact { border-top:1px solid #e1e8ec; padding-top:36px; }
+.mw-contact-links { display:flex; flex-wrap:wrap; gap:14px 28px; }
+.mw-support { font-size:13px; color:#7b858c; margin-top:24px; }
+.mw-support code { display:block; padding:0; background:none; overflow-wrap:anywhere; font-size:12px; }
+.mw-footer { padding-top:16px; border-top:1px solid #e7edf1; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:13px; color:#7b858c; }
+@media(max-width:760px) {
+ .mw-nav { align-items:flex-start; gap:12px; }
+ .mw-nav ul { gap:4px 14px; }
+ .mw-nav a { font-size:13px; }
+ .mw-body { padding:32px 20px; }
+ .mw-layout { grid-template-columns:1fr; gap:0; }
+ .mw-bots { grid-template-columns:1fr; }
+ .mw-gallery { gap:24px; }
+ .mw-section { margin-bottom:36px; }
+}
+@media(max-width:480px) { .mw-gallery { grid-template-columns:1fr; } }
+@media(prefers-reduced-motion:no-preference) { html { scroll-behavior:smooth; } }
