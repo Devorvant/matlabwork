@@ -1,6 +1,7 @@
 
 /* Scoped additions: the existing Veloca header keeps its original stylesheet. */
-.mw-navigation.navigation-top { position:static; width:100%; background:#f7fafc; border-color:#e3eaf0; }
+.mw-navigation.navigation-top { position:relative; width:100%; background:#f7fafc; border-color:#e3eaf0; }
+.mw-content { position:relative; z-index:2; background:#fff; }
 .mw-navigation .wrap { max-width:1100px; padding:0 24px; }
 .mw-nav { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0; }
 .mw-nav ul { display:flex; align-items:center; flex-wrap:wrap; gap:8px 18px; list-style:none; margin:0; padding:0; }
