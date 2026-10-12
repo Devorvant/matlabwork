@@ -15,7 +15,7 @@
 #masthead .mw-hero-actions .mw-hero-primary:hover { background:#fff; border-color:#fff; }
 #masthead .mw-hero-actions a:focus-visible { outline:3px solid #fff; outline-offset:4px; box-shadow:0 0 0 2px #123340; }
 /* Keep the original fixed landscape effect while clipping it to the shorter cover. */
-@media(min-width:761px) and (prefers-reduced-motion:no-preference) {
+@media(prefers-reduced-motion:no-preference) {
  #masthead .custom-header-media { clip-path:inset(0); }
  #masthead .custom-header-media img { position:fixed; bottom:auto; height:clamp(520px,68vh,700px); }
 }
